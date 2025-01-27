@@ -24,12 +24,16 @@ const getItems = () => {
 const addItem = (description) => {
     if(!description) throw new Error('Description is required');
     list.items.push(new Item(description));
-
     
 };
 
+const deleteItem = (itemId) => {
+    list.items = list.items.filter(item => item.id !== itemId);
+}
+
 export default{
     addItem,
+    deleteItem,
     getItems,
     initStore,
 };

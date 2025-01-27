@@ -5,8 +5,8 @@ let element;
 
 /**
  * 
- * @param {String} elementId 
- * @param {Item} items 
+ * @param {String} elementId
+ * @param {Item} items
  */
 export const renderItems = (elementId, items=[])=>{
 

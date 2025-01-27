@@ -1,6 +1,5 @@
 import { Item } from "../models/item.models";
 
-
 /**
  * 
  * @param {Item} item 
@@ -12,7 +11,7 @@ export const createItemHtml = (item) => {
 
     const html = `
             <span>${description}</span>
-            <button>Delete</button>
+            <button class="destroy">Delete</button>
     `;
 
     const liElement = document.createElement('li');
