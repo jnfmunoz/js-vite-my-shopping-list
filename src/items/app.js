@@ -23,7 +23,7 @@ export const App = (elementId) => {
         const app = document.createElement('div');
         app.innerHTML = html;
         document.querySelector(elementId).append(app);
-        console.log('App component loaded.');
+        // console.log('App component loaded.');
         displayItems();
             
     })();
@@ -35,7 +35,7 @@ export const App = (elementId) => {
 
     // Listeners
     newItemInput.addEventListener('keyup', (event) =>{        
-        console.log(event.key);
+        // console.log(event.key);
         if(event.key !== 'Enter') return
         if(event.target.value.trim().length === 0) return;
 
